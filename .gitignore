@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+valenv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets: never commit the real API key
+.env
+.env.local
+
+# Game content cache (agents/maps/modes/skins)
+.cache/
+
+# Third-party reference projects, kept locally for study only
+FORMAT/
+
+# Debug captures: may contain PUUIDs and player names
+websocket_debug/logs/
+
+# Logs
+*.log

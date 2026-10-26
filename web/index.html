@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant Tracker — Loadout</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="brand">
+            <span class="logo">VALORANT</span>
+            <span class="brand-sub">TRACKER</span>
+        </div>
+        <div class="match-meta" id="matchMeta">
+            <span id="metaMode" class="meta-pill">—</span>
+            <span id="metaMap" class="meta-pill">—</span>
+        </div>
+        <div class="status">
+            <span class="status-dot" id="statusDot"></span>
+            <span id="statusText">Connecting...</span>
+        </div>
+    </header>
+
+    <main id="content">
+        <div class="placeholder" id="placeholder">
+            <div class="spinner"></div>
+            <p id="placeholderText">Waiting for a match...</p>
+        </div>
+
+        <section class="teams" id="teams" hidden>
+            <div class="team-col" id="allyCol">
+                <h2 class="team-title ally">Allies</h2>
+                <div class="player-list" id="allyList"></div>
+            </div>
+            <div class="team-col" id="enemyCol">
+                <h2 class="team-title enemy">Enemies</h2>
+                <div class="player-list" id="enemyList"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Full arsenal modal -->
+    <div class="modal-overlay" id="modal" hidden>
+        <div class="modal">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div class="modal-header" id="modalHeader"></div>
+            <div class="arsenal" id="arsenal"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

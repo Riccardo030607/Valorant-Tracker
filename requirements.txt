@@ -1,0 +1,8 @@
+requests>=2.31.0
+urllib3>=2.0.0
+python-dotenv>=1.0.0
+rich>=13.7.0
+flask>=3.0.0
+
+# Opzionale: usato solo dagli strumenti in websocket_debug/
+websocket-client>=1.9.0
